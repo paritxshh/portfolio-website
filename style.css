@@ -382,20 +382,155 @@ a.btn:nth-child(2)::before{
     font-weight: 600;
 }
 
+/* Interest Section CSS-------------------------------------------------------------------------- */
 
+.main-text{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--hover-color);
+}
 
+.main-text h2{
+    font-weight: 700;
+    font-size: var(--normal-font);
+}
 
+.main-text span{
+    color: #fdfdfd;
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
+.section-interests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-gap: 2rem;
+}
 
+.section-interests .interest-box{
+    flex: 1 1 18rem;
+    padding: 2rem 1rem 2rem;
+    text-align: center;
+    background: var(--secon-bg-color);
+    transition: transform .4s;
+    border-radius: 10px;
+}
 
+.interest-btn{
+    width: auto;
+    justify-content: center;
+}
 
+.interest-box:hover{
+    transform: translateY(-.7rem);
+}
 
+.interest-icon{
+    border: 2px solid var(--hover-color);
+    padding: 2rem;
+    background: var(--bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: relative;
+    color: var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    outline: 3px solid var(--bg-color);
+}
 
+.interest-box h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
 
+.interest-box p{
+    margin: .5rem 0 1.5rem 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #bdbdbd;
+    line-height: 1.6;
+}
 
+/* Skills Section CSS-------------------------------------------------------------------------- */
 
+.skills{
+    background: var(--secon-bg-color);
+}
 
+.skill-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
 
+.skill-bar{
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3{
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .python{
+    width: 84%;
+    animation: python 2s;
+}
+
+.skill-bar .bar .java{
+    width: 91%;
+    animation: java 3s;
+}
+
+.skill-bar .bar .html{
+    width: 81%;
+    animation: html 4s;
+}
+
+.skill-bar .bar .css{
+    width: 78%;
+    animation: css 5s;
+}
+
+.skill-bar .bar .javascript{
+    width: 67%;
+    animation: javascript 6s;
+}
 
 
 
@@ -419,5 +554,50 @@ a.btn:nth-child(2)::before{
     }
     80%{
         border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+}
+
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 84%;
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 91%;
+    }
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 81%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 78%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 67%;
     }
 }
